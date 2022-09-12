@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="르탄이 - 프로필 링크" />
+        <meta property="og:description" content="어서와 코딩은 처음이지?" />
+        <meta property="og:image" content="공유할 이미지" />
+        <title>토끼소녀 - 프로필 링크</title>
+        <style>
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+            body{
+                background-color: #FF8C00;
+            }
+
+            .profile{
+                width: 170px;
+                height: 170px;
+
+                background-color: green;
+                border-radius: 100%;
+
+                /* 테두리 */ 
+                border : 5px solid rgb(219, 255, 165);  
+                
+                /* 셋은 같이 붙는 경우가 많음 */
+                background-image: url(토끼소녀.png);
+                background-position: center;
+                background-size: cover;
+
+                
+             
+           }
+
+           .main {
+             color: white;
+             font-size: 20px;
+
+             margin-top: 30px;
+             margin-bottom: 10px;
+           }
+           .sub {
+             color: white;
+             font-size: 14px;
+
+             margin-top: 0px;
+             margin-bottom: 30px;
+           }
+
+           /* 묶어서 크기조절 */
+           .wrap{
+            width: 300px;
+            margin: 30px auto 0px auto;
+            
+            /* 내용물 중앙정령 용이 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           }
+
+           .wrap > a{
+            width: 300px;
+            height: 50px;
+
+            background-color: white;
+            border-radius: 8px;
+
+            /* 간격 부여 */
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            font-weight:  bold;
+            color: #44398a;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /* 글자 효과 제거 */
+            text-decoration: none;
+
+            /* 3px 들: 믿으로 얼마나 갈거냐 */
+            /* 5px: 꼬리의 선명도 */
+            box-shadow: 3px 3px 5px 0px black;
+
+           }
+           .wrap > a:hover{
+                background-color: rgb(211, 209, 209);
+            }
+        </style>
+    </head>
+    <body>
+    <div class="wrap">
+        <div class="profile"></div>
+        <h1 class="main">토끼소녀</h1>
+        <p class="sub">2022년 9월 모의고사때 수호손에서 태어났다</p>  
+        <a target="_blank" href="https://www.daangn.com/">토끼가 자주쓰는 당근마캣</a>
+        <a target="_blank" href="https://topeya.com/37">당근의 중요성</a>
+        <a target="_blank" href="https://www.instagram.com/uhbs__/">웅천고등학교 인스타그램</a>
+    </div>  
+
+    </body>
+</html>
